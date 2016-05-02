@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>quinta aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="stylesheet" type="text/css" href="visor/engine1/style.css" />
+	<script type="text/javascript" src="visor/engine1/jquery.js"></script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/tierra6.jpg','imagenes/tierra3.jpg','imagenes/reducir1.jpg','imagenes/reciclar1.jpg','imagenes/reciclar5.jpg')">
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> Día Mundial de la Madre Tierra</h1>
+
+</div>
+
+	<!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="visor/data1/images/2.jpg" alt="2" title="2" id="wows1_0"/></li>
+<li><img src="visor/data1/images/3.jpg" alt="3" title="3" id="wows1_1"/></li>
+<li><img src="visor/data1/images/1.jpg" alt="1" title="1" id="wows1_2"/></li>
+<li><img src="visor/data1/images/4.jpg" alt="4" title="4" id="wows1_3"/></li>
+<li><img src="visor/data1/images/5.jpg" alt="5" title="5" id="wows1_4"/></li>
+<li><img src="visor/data1/images/6.jpg" alt="6" title="6" id="wows1_5"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="2"><img src="visor/data1/tooltips/2.jpg" alt="2"/>1</a>
+<a href="#" title="3"><img src="visor/data1/tooltips/3.jpg" alt="3"/>2</a>
+<a href="#" title="1"><img src="visor/data1/tooltips/1.jpg" alt="1"/>3</a>
+<a href="#" title="4"><img src="visor/data1/tooltips/4.jpg" alt="4"/>4</a>
+<a href="#" title="5"><img src="visor/data1/tooltips/5.jpg" alt="5"/>5</a>
+<a href="#" title="6"><img src="visor/data1/tooltips/6.jpg" alt="6"/>6</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Slideshow HTML Generator</a> by WOWSlider.com v4.8</span>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="visor/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="visor/engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Día de la Tierra</h2>
+<p> Se muestra la fecha en que se conmemora</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Cuidados Importantes</h2>
+<p> Se muestra los cuidados importantes hacia la Tierra</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Por qué se celebra</h2>
+<p>Muestra el porqué se celebra</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Cambio Climático</h2>
+<p>Muestra el efecto invernadero y calentamiento global </p>
+</a>
+</li>
+
+</ul>
+
+<div data-role="main" class="ui-content">
+<div data-role="content" align="center">
+<div data-role="collapsible" data-theme="a" data-content-theme="false">
+<h1> Reflexión </h1>
+<div> 
+<p> Para hacer un cambio al Planeta debemos empezar a hacer el camibo en nosotros, reducir, reutilizar y reciclar todos los materiales que sea posible... <br>No habrá mejor herencia que dejarles un Planeta en donde vivir a nuestras futuras generaciones...<br>
+El cambio está en nuestras manos, <strong>Hay que hacerlo.</strong>  </p>
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="res//android/mdpi.png" width="46" height="46">
+</div>
+<h4> Aplicación cinco</h4>
+<h4> José Everardo Plata Chora</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1> Dia de la Tierra</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2> Dia de la Tierra</h2>
+</div>
+<p> El Día de la Tierra se celebra el 22 de abril. 
+<br>
+
+<a href="https://www.veoverde.com/2013/04/el-dia-de-la-tierra-en-mexico-4-formas-de-celebrar/">Para ver como se celebra en México dar aquí</a>
+</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Tierra','','imagenes/tierra6.jpg',1)"><img src="imagenes/tierra5.jpg" width="600" height="400" id="Tierra"></a> 
+</div>
+
+
+
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="res//android/mdpi.png" width="46" height="46">
+</div>
+<h4> Aplicación cinco</h4>
+<h4> José Everardo Plata Chora</h4>
+</div>
+</div>
+
+
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Cuidados importantes</h1>
+</div>
+<div data-role="content" align="center">
+<div><div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#rrr" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Regla de las 3 "r"</h2>
+<p> Se muestra el significado de cada "r"</p>
+</a>
+</ul>
+
+</div>
+<br>
+<br>
+<br>
+
+<img src="imagenes/tierra2.jpg" width="35%" height="50%">
+
+</div>
+<br>
+<br>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow2.html" style="width:50 %;height:15%;max-width:50%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+
+
+
+<div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="res//android/mdpi.png" width="46" height="46">
+</div>
+<h4> Aplicación cinco</h4>
+<h4> José Everardo Plata Chora</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Por Qué se celebra</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2> Por qué se celebra el 22 de Abril</h2></div>
+<p>El 22 de abril se celebra el Día Mundial de la Tierra. Esta fecha fue elegida porque el 22 de abril de 1970 una manifestación en Estados Unidos para que se creara en el Gobierno una agencia ambiental que trabaje sobre las problemáticas medioambientales. El impulsor de la protesta fue el senador y activista ambiental Gaylord Nelson, quien convocó a miles de universidades, escuelas primarias y secundarias entre otras comunidades a participar del pedido. Gracias a la expresión social el Ejecutivo estadounidense creó Environmental Protection Agency (Agencia de Protección Ambiental) y varias leyes de protección del medio ambiente. Dos años después se llevó adelante el encuentro a nivel mundial: Cumbre de la Tierra de Estocolmo. La intensión es sensibilizar a la humanidad de que es parte del planeta Tierra y sus huellas marcarán el destino del mundo, por eso reducir (el consumo), reciclar y reutilizar objetos es la forma en que cada uno día a día puede colaborar para evitar la contaminación ambiental.
+
+</p>
+<div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image41','','imagenes/tierra3.jpg',1)"><img src="imagenes/tierra.jpg" width="400" height="300" id="Image41"></a> </div>
+</div>
+
+
+<div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="res//android/mdpi.png" width="46" height="46">
+</div>
+<h4> Aplicación cinco</h4>
+<h4> José Everardo Plata Chora</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Cambio Climático</h1>
+</div>
+<div data-role="content" align="center">
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Efecto Invernadero</h1>
+<div> 
+<h2>Efecto Invernadero</h2>
+<p> El efecto invernadero es un fenómeno por el cual ciertos gases retienen parte de la energía emitida por el suelo tras haber sido calentado por la radiación solar. Se produce, por lo tanto, un efecto de calentamiento similar al que ocurre en un invernadero, con una elevación de la temperatura. </p>
+<div> 
+<img src="imagenes/efecto.jpg" width="50%" height="50%"><br></div>
+</div>
+</div>
+<br>
+<div data-role="collapsible" data-content-theme="false">
+<h1> Calentamiento Global</h1>
+
+<div> 
+<h2> Calentamiento Global</h2>
+<p> La noción de calentamiento global permite referirse a dos cuestiones relacionadas: por un lado, se trata de un fenómeno observado en el promedio de la temperatura de las últimas décadas, que sube de manera sostenida; por otra parte, es una teoría que, a partir de distintas proyecciones, sostiene que la temperatura seguirá creciendo en el futuro a causa de la acción del hombre. </p>
+<div>
+<img src="imagenes/calentamiento.jpg" width="50%" height="50%"><br> </div>
+<br>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="res//android/mdpi.png" width="46" height="46">
+</div>
+<h4> Aplicación cinco</h4>
+<h4> José Everardo Plata Chora</h4>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="rrr" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Regla de las 3 "r"</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Regla Número 1</h1>
+<div>
+<h2> Reducir</h2> 
+<p> Cuando hablamos de reducir lo que estamos diciendo es que se debe tratar de reducir o simplificar el consumo de los productos directos, o sea, todo aquello que se compra y se consume, ya que esto tiene una relación directa con los desperdicios, y a la vez con nuestro bolsillo. Por ejemplo, en vez de comprar 6 botellas pequeñas de una bebida, se puede conseguir una o dos grandes, teniendo la misma cantidad de producto pero menos envases, no pedir bolsas en los supermercados a menos que sea necesario, reducir el consumo de papel, etc. 
+
+Si reducimos el consumo, disminuimos el impacto en el medio ambiente. Esta R está totalmente ligada a la concientización y la educación. 
+La reducción puede realizarse en 2 niveles: reducción del consumo de bienes o de energía. De hecho, actualmente la producción de energía produce numerosos desechos (desechos nucleares, dióxido de carbono...). El objetivo sería: 
+
+· Reducir o eliminar la cantidad de materiales destinados a un uso único (por ejemplo, los embalajes). 
+
+· Adaptar los aparatos en función de sus necesidades (por ejemplo poner lavadoras y lavavajillas llenos y no a media carga). <br>
+· Reducir pérdidas energéticas o de recursos: de agua, desconexión de aparatos eléctricos en stand by, conducción eficiente, desconectar transformadores, etc. 
+<br>
+Reducir la emisión de gases contaminantes, nocivos o tóxicos evitará la intoxicación animal o vegetal del entorno si llega a cotas no nocivas. Actualmente, países europeos trabajan con una importante política de la reducción con el lema: La basura es alimento (para la tierra). El objetivo es producir productos sin contaminantes (100% biodegradables), para que cuando acabe su vida útil no tenga impacto en el medio, o éste sea lo más reducido posible. 
+ </p>
+ <div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image59','','imagenes/reducir1.jpg',1)"><img src="imagenes/reducir.jpg" width="521" height="337" id="Image59"></a></div><br>
+</div>
+
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1> Regla Número 2</h1>
+<div> 
+<h2> Reutilizar</h2>
+<p> Al decir reutilizar, nos estamos refiriendo a poder volver a utilizar las cosas, dándole una vida útil a embalajes o materiales que usamos día a día y darles un uso lo más prolongado posible antes de que llegue la hora de deshacernos de ellos definitivamente, disminuyendo así el volumen de la basura y reduciendo el impacto en el medio ambiente. 
+
+Por ejemplo, utilizar la cara limpia de las hojas impresas, el papel usado se puede transformar en pulpa y crear nuevas hojas para escribir, pintar o decorar, darle una nueva vida a los botes de cristal, las cajitas o frascos de PVC, metal o plástico, reutilizar la madera para hacer tus propias estanterías, pintar esa silla vieja, donar libros, aparatos eléctricos, ropa, muebles, etc. 
+
+Esta tarea suele ser la que menos atención recibe y es una de las más importantes. No solo ayuda al medio ambiente sino también a la economía en casa, desarrolla tu imaginación y pondrá un punto original a tu vida. 
+</p>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image69','','imagenes/reciclar1.jpg',1)"><img src="imagenes/reciclar2.png" width="300" height="300" id="Image69"></a></div>
+<br>
+</div>
+
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1> Regla Número 3</h1>
+<div> 
+<h2>Reciclar</h2>
+<p> Ésta es una de las R más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y bricks, sobre todo), pero no biodegradables. Por tanto se requiere el uso de personal y energía para someter los materiales al proceso necesario para su reutilización. Esto significa que mediante el reciclaje se reduce de forma verdaderamente significativa la utilización de nuevos materiales, y con ello, la generación de basura "nueva", sin embargo hay que recordar que al reciclar se gasta mucha energía y se contamina al reprocesar los residuos. 
+
+La mayoría de los materiales que usamos pueden ser reciclados y usados en otras aplicaciones; materiales como el vidrio, pueden reciclarse 40 veces por ejemplo, el plástico se puede reciclar calentándolo hasta que se funda dándole una nueva forma. Es nuestro compromiso reciclar lo mayor posible y disminuir la producción de basura "nueva". 
+
+Desde ifeel maps te aconsejamos que incorpores la regla de las 3R ecológicas a tu vida, no sólo te sentirás bien al tomar conciencia de lo que consumes para cuidar el medio ambiente, sino que también te ayudará a disminuir gastos y hacer volar la imaginación dándole una nueva vida a lo que pensabas tirar.  </p>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image79','','imagenes/reciclar5.jpg',1)"><img src="imagenes/reciclar4.png" width="250" height="250" id="Image79"></a></div>
+<br>
+</div>
+</div>
+</div>
+<div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="res//android/mdpi.png" width="46" height="46">
+</div>
+<h4> Aplicación cinco</h4>
+<h4> José Everardo Plata Chora</h4>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
